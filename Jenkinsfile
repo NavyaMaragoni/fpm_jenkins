@@ -8,8 +8,8 @@ pipeline {
                 sh '''
                     rm -rf build
                     mkdir build
-                    javac -d build src/Hello.java
-                    jar cfe hello.jar Hello -C build .
+                    javac -d build src/hello.java
+                    jar cfe hello.jar hello -C build .
                 '''
             }
         }
